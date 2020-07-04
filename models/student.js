@@ -16,6 +16,7 @@ const studentSchema = mongoose.Schema({
     value:{
         type: Number,
         require:true,
+        // Valida se a nota inserida é menor do que 0
         validate(value){
             if(value<0) throw new Error("Valor negativo para a nota não permitido.");
         }
