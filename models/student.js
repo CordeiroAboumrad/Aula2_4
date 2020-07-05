@@ -28,7 +28,7 @@ const studentSchema = mongoose.Schema({
 });
 
 // Terceiro parâmetro obriga o mongoose a colocar a palavra no singular
-const studentModel = mongoose.model('student', studentSchema, 'student');
+const studentModel = mongoose.model('student', studentSchema);
 
 // Exportação para uso em outras classes
 export {studentModel};
