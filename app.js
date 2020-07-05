@@ -9,7 +9,6 @@ const app = express();
 // require('dotenv').config();
 const dotEnv = dotenv.config();
 
-process.env.USER_DB_PASSWORD = "007007007";
 
 // Conecta ao MongoDB pelo Mongoose
 (async () => {
