@@ -54,7 +54,7 @@ app.patch('/student/:id', async (req, res) => {
 // Melhoria implementada
 app.put('/student/:id', async (req, res) => {
     try{
-        const student = await studentModel.findOneAndUpdate({'_id': req.params.id}, 
+        const student = await studentModel.findOneAndUpdate({'_id': req.params.id},
         req.body,
         {new: true}
         );
@@ -64,5 +64,6 @@ app.put('/student/:id', async (req, res) => {
     }
 });
 
-//Olá, mundo!!!
+
+//Olá, mundo!!! Mudanças para dar merge na branch master
 export {app as studentRouter};
